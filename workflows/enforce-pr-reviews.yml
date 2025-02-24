@@ -15,8 +15,8 @@ jobs:
         with:
           script: |
             const prAuthor = context.payload.pull_request.user.login;
-            const requiredReviewers = ['tanayrs','bhargavajia'];
-            const allowedReviewers = ['tanmayrainanda', 'shuklaananya'];
+            const requiredReviewers = ['tanmayrainanda'];
+            const allowedReviewers = ['shuklaananya'];
 
             if (!requiredReviewers.includes(prAuthor)) {
               console.log(`PR author ${prAuthor} does not require special review.`);
